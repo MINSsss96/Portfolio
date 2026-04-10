@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Engineer Portfolio</title>
-  <meta name="description" content="Python, Java, TypeScript 기반 AI 서비스와 웹 제품을 설계하고 개발한 포트폴리오">
+  <title>김민서 포트폴리오 | Backend &amp; AI</title>
+  <meta name="description" content="Python, Java, TypeScript 기반으로 백엔드 구조, AI 연동, 서비스 운영 안정성을 다루는 포트폴리오">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -481,6 +481,35 @@
 
     .project-points strong { color: var(--text); }
 
+    .project-results {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .project-result-card {
+      padding: 0.85rem 0.95rem;
+      border-radius: 12px;
+      border: 1px solid rgba(16, 185, 129, 0.16);
+      background: linear-gradient(180deg, rgba(16, 185, 129, 0.08), rgba(13, 15, 24, 0.72));
+    }
+
+    .project-result-label {
+      display: block;
+      color: var(--text3);
+      font-size: 0.76rem;
+      letter-spacing: 0.04em;
+    }
+
+    .project-result-value {
+      display: block;
+      margin-top: 0.35rem;
+      color: var(--text);
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
     .project-links {
       display: flex;
       flex-wrap: wrap;
@@ -605,6 +634,11 @@
     [data-theme="light"] .trouble-card {
       background: rgba(255, 255, 255, 0.96);
       border-color: rgba(99, 102, 241, 0.16);
+    }
+
+    [data-theme="light"] .project-result-card {
+      background: linear-gradient(180deg, rgba(16, 185, 129, 0.08), rgba(255, 255, 255, 0.96));
+      border-color: rgba(16, 185, 129, 0.18);
     }
 
     [data-theme="light"] .trouble-title {
@@ -897,23 +931,21 @@
       <div class="hero-orb hero-orb-1"></div>
       <div class="hero-orb hero-orb-2"></div>
       <div class="container hero-content">
-        <div class="hero-badge">김민서 · AI Engineer · Full Stack Developer</div>
-        <h1>AI 기반 서비스를<br><span class="h1-accent">설계하고 구현</span>합니다</h1>
+        <div class="hero-badge">김민서 · Backend-Focused Full Stack Developer</div>
+        <h1>백엔드 구조와 AI 기능을<br><span class="h1-accent">실제 서비스로 연결</span>합니다</h1>
         <p class="hero-sub">
-          Python · Java · TypeScript를 중심으로 백엔드부터 프론트엔드, AI/ML 파이프라인,
-          클라우드 인프라까지 풀스택으로 개발합니다.
+          Python, Java, TypeScript를 기반으로 백엔드 구조, AI 검색 파이프라인, 서비스 운영 안정성까지 연결하는 백엔드 중심 풀스택 개발자입니다.
         </p>
         <div class="hero-chips">
-          <span class="chip">LangGraph</span>
           <span class="chip">FastAPI</span>
           <span class="chip">Spring Boot</span>
           <span class="chip">React</span>
-          <span class="chip">Gemini API</span>
-          <span class="chip">CLIP</span>
-          <span class="chip">RAG</span>
-          <span class="chip">MCP Server</span>
+          <span class="chip">Elasticsearch</span>
+          <span class="chip">Qdrant</span>
+          <span class="chip">MySQL</span>
           <span class="chip">Docker</span>
           <span class="chip">AWS</span>
+          <span class="chip">GitHub Actions</span>
         </div>
         <div class="hero-btns">
           <a href="#projects" class="btn-primary">프로젝트 보기</a>
@@ -931,8 +963,8 @@
           <div class="skill-card reveal"><div class="skill-cat">Language</div><div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">TypeScript</span></div></div>
           <div class="skill-card reveal reveal-delay-1"><div class="skill-cat">Backend</div><div class="skill-tags"><span class="skill-tag">FastAPI</span><span class="skill-tag">Spring Boot</span><span class="skill-tag">JPA / Hibernate</span><span class="skill-tag">WebSocket · STOMP</span></div></div>
           <div class="skill-card reveal reveal-delay-2"><div class="skill-cat">Frontend</div><div class="skill-tags"><span class="skill-tag">React</span><span class="skill-tag">Next.js</span><span class="skill-tag">TailwindCSS</span><span class="skill-tag">Framer Motion</span><span class="skill-tag">Vite</span></div></div>
-          <div class="skill-card reveal"><div class="skill-cat">AI / ML</div><div class="skill-tags"><span class="skill-tag">Google Gemini API</span><span class="skill-tag">LangGraph</span><span class="skill-tag">LangChain</span><span class="skill-tag">CLIP</span><span class="skill-tag">RAG</span><span class="skill-tag">BM25 + Vector</span><span class="skill-tag">MCP Server</span></div></div>
-          <div class="skill-card reveal reveal-delay-1"><div class="skill-cat">Database</div><div class="skill-tags"><span class="skill-tag">MySQL</span><span class="skill-tag">SQLite</span></div></div>
+          <div class="skill-card reveal"><div class="skill-cat">AI / ML</div><div class="skill-tags"><span class="skill-tag">Google Gemini API</span><span class="skill-tag">RAG</span><span class="skill-tag">CLIP</span><span class="skill-tag">BM25 + Vector</span><span class="skill-tag">LangChain</span></div></div>
+          <div class="skill-card reveal reveal-delay-1"><div class="skill-cat">Database</div><div class="skill-tags"><span class="skill-tag">MySQL</span><span class="skill-tag">Elasticsearch</span><span class="skill-tag">Qdrant</span><span class="skill-tag">SQLite</span></div></div>
           <div class="skill-card reveal reveal-delay-2"><div class="skill-cat">Infra · DevOps</div><div class="skill-tags"><span class="skill-tag">Docker</span><span class="skill-tag">AWS EC2 · S3 · RDS</span><span class="skill-tag">GitHub Actions</span><span class="skill-tag">Railway</span></div></div>
         </div>
       </div>
@@ -946,7 +978,7 @@
         <div class="projects-list">
           <div class="project-card reveal" onclick="toggleProject(this)">
             <div class="project-topbar">
-              <div class="project-num">01 · AI · Python · Next.js · 6인 팀 프로젝트</div>
+              <div class="project-num">01 · AI Search · FastAPI · Python · 6인 팀 프로젝트</div>
               <div class="project-links">
                 <a class="project-link" href="https://github.com/aix-4aida/daiso-category-search" target="_blank" rel="noreferrer">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.72.5.1.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0112 6.84c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
@@ -955,18 +987,25 @@
               </div>
             </div>
             <div class="project-title">다이소 카테고리 AI 검색 시스템</div>
-            <div class="project-subtitle">Daiso Category Search — AI 키오스크 서비스</div>
+            <div class="project-subtitle">Daiso Category Search — 음성·텍스트 기반 카테고리 탐색 키오스크</div>
             <div class="project-tags">
-              <span class="p-tag">Python</span><span class="p-tag">FastAPI</span><span class="p-tag">LangGraph</span><span class="p-tag">LangChain</span><span class="p-tag">Next.js</span><span class="p-tag">TypeScript</span><span class="p-tag">Gemini API</span><span class="p-tag">CLIP</span><span class="p-tag">SQLite</span><span class="p-tag">Selenium</span>
+              <span class="p-tag">FastAPI</span><span class="p-tag">Python</span><span class="p-tag">Elasticsearch</span><span class="p-tag">Qdrant</span><span class="p-tag">Gemini API</span><span class="p-tag">Docker</span><span class="p-tag">Next.js</span><span class="p-tag">TypeScript</span><span class="p-tag">CLIP</span>
             </div>
-            <p class="project-desc">다이소 상품을 자연어로 검색할 수 있는 AI 키오스크 서비스입니다. 사용자의 의도가 불명확할 경우 AI가 스스로 꼬리질문을 생성하는 순환 에이전트를 구현했습니다.</p>
+            <p class="project-desc">6인 팀 프로젝트에서 음성·텍스트 기반 상품 카테고리 탐색 키오스크를 개발했습니다. 막내 팀장으로서 의견을 조율하고 방향을 정리했으며, 저는 의도 분석 단계를 중심으로 FastAPI 기반 통합 검색 API와 STT → 의도 분석 → 키워드 확장 → 재검색 파이프라인 구현에 참여했습니다. 팀과 함께 Qdrant + Elasticsearch 하이브리드 검색과 후속 질의 기반 보정 흐름을 개선했고, 키오스크 UX를 고려해 최소 질문 중심 구조로 조정했습니다.</p>
+            <div class="project-results">
+              <div class="project-result-card"><span class="project-result-label">음성 검색 성공률</span><span class="project-result-value">68% → 87%</span></div>
+              <div class="project-result-card"><span class="project-result-label">검색 응답 시간 p95</span><span class="project-result-value">46초 → 11초</span></div>
+              <div class="project-result-card"><span class="project-result-label">Top-3 정답 포함률</span><span class="project-result-value">92% → 100%</span></div>
+            </div>
             <div class="expand-hint">자세히 보기</div>
             <div class="project-extra">
               <ul class="project-points">
-                <li><strong>LangGraph 순환 에이전트</strong> 설계</li>
-                <li><strong>CLIP 멀티모달 임베딩</strong>과 <strong>BM25 + 벡터 하이브리드 검색</strong> 결합</li>
-                <li><strong>Selenium</strong>으로 601개 상품 크롤링 후 SQLite 파이프라인 구축</li>
-                <li><strong>Gemini API</strong>로 골든 데이터셋 생성 및 리랭킹 검증</li>
+                <li>막내 팀장으로서 의견 조율, 우선순위 정리, 프로젝트 방향 정리</li>
+                <li>의도 분석 단계 담당 및 검색 로직 구현</li>
+                <li>FastAPI 기반 통합 검색 API 구현 참여</li>
+                <li>STT → 의도 분석 → 키워드 확장 → 재검색 파이프라인 구현 참여</li>
+                <li>팀과 함께 Qdrant + Elasticsearch 하이브리드 검색 및 후속 질의 기반 보정 흐름 개선</li>
+                <li>키오스크 UX를 고려해 최소 질문 중심 구조로 서비스 흐름 조정</li>
               </ul>
               <div class="trouble-grid">
                 <div class="trouble-card">
@@ -1024,7 +1063,7 @@
 
           <div class="project-card reveal reveal-delay-1" onclick="toggleProject(this)">
             <div class="project-topbar">
-              <div class="project-num">02 · Full Stack · Java · AWS · 4인 팀 프로젝트</div>
+              <div class="project-num">02 · Backend · Spring Boot · Java · 4인 팀 프로젝트</div>
               <div class="project-links">
                 <a class="project-link" href="https://github.com/noeyos-p/hirehub" target="_blank" rel="noreferrer">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.72.5.1.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0112 6.84c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
@@ -1033,19 +1072,22 @@
               </div>
             </div>
             <div class="project-title">HireHub</div>
-            <div class="project-subtitle">개발자 취업 플랫폼 — AI 매칭 · 실시간 채팅 · 결제 연동</div>
+            <div class="project-subtitle">개발자 채용 플랫폼 — 리팩토링 · 인증 · 운영 안정성</div>
             <div class="project-tags">
-              <span class="p-tag">Java</span><span class="p-tag">Spring Boot</span><span class="p-tag">JPA</span><span class="p-tag">MySQL</span><span class="p-tag">React</span><span class="p-tag">TypeScript</span><span class="p-tag">FastAPI</span><span class="p-tag">Gemini API</span><span class="p-tag">AWS</span><span class="p-tag">Docker</span><span class="p-tag">WebSocket</span>
+              <span class="p-tag">Spring Boot</span><span class="p-tag">Java</span><span class="p-tag">JWT / OAuth2</span><span class="p-tag">FastAPI</span><span class="p-tag">MySQL</span><span class="p-tag">WebSocket · STOMP</span><span class="p-tag">Docker</span><span class="p-tag">AWS</span><span class="p-tag">GitHub Actions</span><span class="p-tag">Gemini API</span>
             </div>
-            <p class="project-desc">기술 스택 정밀 필터링과 AI 매칭을 제공하는 개발자 전용 취업 플랫폼입니다. AI 자기소개서 생성, 면접 코칭, 실시간 채팅, 결제 등 풀스택으로 구현했습니다.</p>
+            <p class="project-desc">4인 팀 프로젝트에서 개발자 채용 플랫폼의 백엔드 구조 개선과 핵심 기능 구현을 맡았습니다. 기존 코드를 리팩토링해 구조를 정리하고, JWT/OAuth2 인증, Spring Boot 도메인 API, FastAPI 기반 AI 연동, MySQL 데이터 처리, WebSocket/STOMP 기반 실시간 기능을 구현했습니다. 인증 오류, 스키마 불일치, 외부 API 지연, 환경변수 누락 같은 운영 이슈를 분석하고 해결하며 서비스 안정성의 중요성을 경험했습니다.</p>
             <div class="expand-hint">자세히 보기</div>
             <div class="project-extra">
               <ul class="project-points">
-                <li><strong>Spring Security + JWT + OAuth2</strong> 인증/인가 구현</li>
-                <li><strong>FastAPI + Gemini API</strong> 기반 AI 매칭 및 코칭 기능 구현</li>
-                <li><strong>WebSocket(STOMP/SockJS)</strong> 실시간 채팅 기능 구현</li>
-                <li><strong>AWS + Docker Compose + GitHub Actions</strong> 배포 자동화</li>
-                <li><strong>PortOne</strong> 결제 연동</li>
+                <li>기존 코드 리팩토링 및 구조 정리</li>
+                <li>JWT/OAuth2 기반 로그인 및 인증 처리</li>
+                <li>Spring Boot 기반 도메인 API 구현</li>
+                <li>FastAPI 기반 AI 기능 연동 구조 구현</li>
+                <li>MySQL 연동 및 데이터 처리</li>
+                <li>WebSocket/STOMP 기반 실시간 기능 구현</li>
+                <li>인증 오류, 스키마 불일치, 외부 API 지연, 환경변수 누락 등 운영 이슈 분석 및 해결</li>
+                <li>AWS 배포 환경 구성 및 Docker Compose, GitHub Actions 기반 CI/CD 적용</li>
               </ul>
             </div>
           </div>
@@ -1086,14 +1128,13 @@
         <h2 class="sec-title reveal reveal-delay-1">About Me</h2>
         <div class="about-grid">
           <div class="about-text reveal reveal-delay-2">
-            <p>저는 <strong>Python, Java, TypeScript</strong>를 활용하여 AI 기반 서비스를 설계하고 개발한 풀스택 개발자입니다.</p>
-            <p>백엔드부터 프론트엔드, <strong>AI/ML 파이프라인</strong>, 클라우드 인프라 구축까지 전 과정을 직접 경험했습니다.</p>
-            <p>단순히 기능을 구현하는 것을 넘어, <strong>문제를 정의하고</strong> 기술로 해결하며 <strong>검증 가능한 성과</strong>를 만드는 것을 중요하게 생각합니다.</p>
+            <p>Python, Java, TypeScript를 기반으로 백엔드 구조를 만들고 AI 기능을 서비스 흐름에 연결해 온 백엔드 중심 풀스택 개발자입니다.</p>
+            <p>API 설계, 검색 파이프라인, 프론트 연결, 배포와 운영 이슈 대응까지 경험하며 문제를 구조적으로 해결하는 방식을 중요하게 생각합니다.</p>
           </div>
           <div class="strengths reveal reveal-delay-3">
-            <div class="strength-item"><div class="strength-label">01 · AI INTEGRATION</div><div class="strength-title">AI와 백엔드를 연결하는 풀스택 경험</div><div class="strength-desc">FastAPI + Gemini API + Spring Boot를 조합하여 AI 서비스를 실제 서비스 수준으로 구현했습니다.</div></div>
-            <div class="strength-item"><div class="strength-label">02 · AGENT DESIGN</div><div class="strength-title">에이전트 시스템 설계 경험</div><div class="strength-desc">LangGraph 순환 에이전트와 MCP 서버를 직접 설계·구현하며 AI 에이전트 아키텍처를 깊이 이해합니다.</div></div>
-            <div class="strength-item"><div class="strength-label">03 · DEVOPS</div><div class="strength-title">클라우드 배포 및 DevOps 경험</div><div class="strength-desc">Docker, AWS, GitHub Actions를 활용한 CI/CD 파이프라인 구축 경험이 있습니다.</div></div>
+            <div class="strength-item"><div class="strength-label">01 · AI INTEGRATION</div><div class="strength-title">AI 기능을 서비스 흐름에 맞게 연결</div><div class="strength-desc">검색, 추천, 코칭 기능을 API와 화면 흐름에 연결하며 실제 사용 맥락에서 동작하도록 조정했습니다.</div></div>
+            <div class="strength-item"><div class="strength-label">02 · BACKEND ARCHITECTURE</div><div class="strength-title">검색·인증·실시간 기능을 구조화</div><div class="strength-desc">의도 분석, 인증, 실시간 통신, 외부 연동 문제를 나눠 API와 상태 흐름을 정리하고 구현했습니다.</div></div>
+            <div class="strength-item"><div class="strength-label">03 · DEVOPS &amp; RELIABILITY</div><div class="strength-title">배포 이후까지 고려한 안정성</div><div class="strength-desc">배포 자동화, 환경 변수 관리, 인증 오류와 응답 지연 대응을 통해 운영 단계의 안정성을 함께 챙겼습니다.</div></div>
           </div>
         </div>
       </div>
@@ -1110,7 +1151,7 @@
               <p class="contact-kicker">Contact</p>
               <h3 class="contact-title">함께 일할 기회가 있다면<br>편하게 연락 주세요.</h3>
               <p class="contact-copy">
-                AI 서비스, 백엔드 개발, 풀스택 구현과 관련된 포지션이나 협업 제안을 받고 있습니다.
+                백엔드 개발, AI 기능 연동, 서비스 구조 개선과 관련된 포지션이나 협업 제안을 받고 있습니다.
                 메일이나 GitHub를 통해 연락 주시면 빠르게 확인하겠습니다.
               </p>
             </div>
@@ -1124,7 +1165,7 @@
             <div class="contact-card">
               <p class="contact-card-label">Name</p>
               <span class="contact-card-value">김민서</span>
-              <p class="contact-card-sub">AI Engineer / Full Stack Developer</p>
+              <p class="contact-card-sub">Backend-Focused Full Stack Developer</p>
             </div>
             <div class="contact-card">
               <p class="contact-card-label">Email</p>
@@ -1147,7 +1188,7 @@
     </section>
   </main>
 
-  <footer>Built with HTML · CSS · JS | <span style="color: var(--accent)">AI Engineer Portfolio</span></footer>
+  <footer>Built with HTML · CSS · JS | <span style="color: var(--accent)">Backend &amp; AI Portfolio</span></footer>
 
   <script>
     const nav = document.getElementById("nav");
